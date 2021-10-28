@@ -15,7 +15,7 @@ import seaborn as sn
 #get feature
 def transform(imgeFile):
     img = cv2.imread(imgeFile)
-    resized_img = cv2.resize(img, (13, 13), interpolation=cv2.INTER_AREA)
+    resized_img = cv2.resize(img, (26, 26), interpolation=cv2.INTER_AREA)
     input_data = []
     for l in range(resized_img.shape[0]):
         hist = np.histogram(resized_img[l].T[2].flatten(), bins=20)[1].tolist()
