@@ -67,7 +67,7 @@ imgs=cv2.imread('/Users/peytonzhu/Desktop/GreenChannel.png')
 #mask = cv2.erode(th0, np.ones((7, 7), np.uint8))
 #j=pass_mask(mask,imgs)
 
-for i in range(0,9):
+for i in range(0,35):
     cropped = imgs[listY[i] - 13:listY[i] + 13, listX[i] - 13:listX[i] + 13]
     save_dir="/Users/peytonzhu/Desktop/Normal/normal6_{}.png".format(i)
     cv2.imwrite(save_dir,cropped)
