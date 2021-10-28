@@ -4,7 +4,7 @@ import numpy as np
 xdata=[]
 ydata=[]
 
-with open('/Users/peytonzhu/Desktop/research/ddb1_v02_01/total/total6.txt') as f:
+with open('/Users/peytonzhu/Desktop/research/ddb1_v02_01.txt') as f:
     line=f.readlines()
     for values in line:
         xdata.append(values.split(',')[0])
@@ -62,7 +62,7 @@ def pass_mask(mask, img):
                 qwe[i][j] = 0
     # asd = cv2.filter2D(qwe, cv2.CV_8U, mask)
     return qwe
-imgs=cv2.imread('/Users/peytonzhu/Desktop/GreenChannel/G6.png')
+imgs=cv2.imread('/Users/peytonzhu/Desktop/GreenChannel.png')
 #ret0, th0 = cv2.threshold(i, 0, 255, cv2.THRESH_BINARY)
 #mask = cv2.erode(th0, np.ones((7, 7), np.uint8))
 #j=pass_mask(mask,imgs)
